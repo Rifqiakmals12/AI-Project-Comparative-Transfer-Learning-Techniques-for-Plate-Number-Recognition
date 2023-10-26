@@ -1,7 +1,5 @@
 # Comparative Transfer Learning Techniques for Plate Number Recognition
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 ## Table of Contents
 
 - [Project or Portfolio Name](#project-or-portfolio-name)
@@ -11,12 +9,11 @@
   - [Method](#method)
   - [Results](#results)
   - [Conclusion](#conclusion)
-  - [License](#license)
   - [Contact](#contact)
 
 ## About
 
-Monitoring vehicle activity both on the highway and in certain places such as parking lots needs to be done if there is a specific incident. Unexpected events such as accidents or vehicle theft may occur anytime. Therefore, tracking through number plate recognition has become something important and has become a hot topic with the various methods used. Previous research used machine learning techniques to recognize characters on number plates. The use of this technique does not produce optimal accuracy. Therefore, we propose the use of transfer learning techniques to achieve better accuracy results. This research evaluates three transfer learning models, namely the DenseNet121, MobileNetV2, and NASNetMobile models.
+Monitoring vehicle activity both on the highway and in certain places such as parking lots needs to be done if there is a specific incident. Unexpected events such as accidents or vehicle theft may occur at times. Therefore, tracking through number plate recognition has become important and a hot topic with the various methods used. Previous research used machine learning techniques to recognize characters on number plates. The use of this technique does not produce optimal accuracy. Therefore, we propose using transfer learning techniques to achieve better accuracy results. This research evaluates three transfer learning models, namely the DenseNet121, MobileNetV2, and NASNetMobile models.
 
 ## Program Description
 
@@ -24,7 +21,7 @@ This program was created to find and play the best model by comparing three type
 
 ## Datasets Used
 
-- [Dataset](https://www.kaggle.com/datasets/nainikagaur/dataset-characters) : The character dataset used in this research was obtained from Kaggle. There were 36 characters with ten numeric
+- [Dataset](https://www.kaggle.com/datasets/nainikagaur/dataset-characters): The character dataset used in this research was obtained from Kaggle. There were 36 characters with ten numeric
 characters and 26 letter characters. The data used was in black and white, with the character color being white and the background black. Example of the dataset :
 
 ![image](https://github.com/Rifqiakmals12/AI-Project/assets/72428679/132e54a8-092a-4970-a553-6eee284aadf4)
@@ -39,7 +36,7 @@ The character recognition system on motorized vehicle license plates starts from
 The total data used in this research was 37,623 data. Figure 2 shows an example of the data used in this research. Then, for the testing data, we used motor vehicle image data. The image was shot perpendicular to the vehicle object. We used the image of Indonesian vehicle plates in the parking lot.
 
 #### B. Data Pre-Processing
-Before being used for the feature extraction stage, the dataset was carried out in a pre-processing stage to adjust to the transfer learning model. The pre-processing stage was done by resizing to 224 x 224 to fit the pre-trained transfer learning model. Then, we also used data augmentation to add diversity to the data used in the feature extraction stage. We used the ImageDataGenerator librarY, provided by the Python programming language for data augmentation. 
+Before being used for the feature extraction stage, the dataset was carried out in a pre-processing stage to adjust to the transfer learning model. The pre-processing stage was done by resizing 224 x 224 to fit the pre-trained transfer learning model. Then, we also used data augmentation to add diversity to the data used in the feature extraction stage. We used the ImageDataGenerator library, provided by the Python programming language for data augmentation. 
 
 
 #### C. Feature extraction
@@ -82,10 +79,6 @@ viewed in general, the characters have almost the same shape. The dataset used w
 Vehicle number plates need to be identified when unexpected events occur on the streets. Many CCTV cameras have been installed on the road and in the parking lot to monitor driving activities. Previous research used machine
 learning techniques to perform number plate recognition. The use of machine learning has not yet produced optimal accuracy. This research used three transfer learning techniques for number plate recognition. The results showed that the DenseNet121 model yielded an accuracy of 96.42%. This research still has shortcomings in recognizing the number plates with a variety of character models. Therefore, it is recommended that future research increase the diversity
 of data to increase accuracy. 
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
